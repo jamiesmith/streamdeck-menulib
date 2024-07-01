@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -48,8 +48,30 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7DE6B9E42C32E19A0052B4CF /* buttons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttons.png; sourceTree = "<group>"; };
+		7DE6B9E52C32E19A0052B4CF /* buttons@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "buttons@2x.png"; sourceTree = "<group>"; };
+		7DE6B9E62C32E19A0052B4CF /* caret.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = caret.svg; sourceTree = "<group>"; };
+		7DE6B9E72C32E19A0052B4CF /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		7DE6B9E82C32E19A0052B4CF /* check.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = check.svg; sourceTree = "<group>"; };
+		7DE6B9E92C32E19A0052B4CF /* elg_calendar_inv_13.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elg_calendar_inv_13.svg; sourceTree = "<group>"; };
+		7DE6B9EA2C32E19A0052B4CF /* elg_calendar_inv.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elg_calendar_inv.svg; sourceTree = "<group>"; };
+		7DE6B9EB2C32E19A0052B4CF /* elg_calendar.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = elg_calendar.svg; sourceTree = "<group>"; };
+		7DE6B9EC2C32E19A0052B4CF /* local.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = local.css; sourceTree = "<group>"; };
+		7DE6B9ED2C32E19A0052B4CF /* pi_required_ok.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pi_required_ok.svg; sourceTree = "<group>"; };
+		7DE6B9EE2C32E19A0052B4CF /* pi_required.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pi_required.svg; sourceTree = "<group>"; };
+		7DE6B9EF2C32E19A0052B4CF /* rcheck.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rcheck.svg; sourceTree = "<group>"; };
+		7DE6B9F02C32E19A0052B4CF /* sdpi.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = sdpi.css; sourceTree = "<group>"; };
+		7DE6B9F22C32E19A0052B4CF /* common.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = common.js; sourceTree = "<group>"; };
+		7DE6B9F32C32E19A0052B4CF /* en.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = en.json; sourceTree = "<group>"; };
+		7DE6B9F42C32E19A0052B4CF /* es.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = es.json; sourceTree = "<group>"; };
+		7DE6B9F52C32E19A0052B4CF /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		7DE6B9F62C32E19A0052B4CF /* MacMenuUtil */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = MacMenuUtil; sourceTree = "<group>"; };
+		7DE6B9F72C32E19A0052B4CF /* MacMenuUtilIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MacMenuUtilIcon.png; sourceTree = "<group>"; };
+		7DE6B9F82C32E19A0052B4CF /* MacMenuUtilIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MacMenuUtilIcon@2x.png"; sourceTree = "<group>"; };
+		7DE6B9F92C32E19A0052B4CF /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		7DE6B9FB2C32E1C90052B4CF /* package.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = package.sh; sourceTree = SOURCE_ROOT; };
 		7F1EB5A125BC226A00EBFAC7 /* OSAKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OSAKit.framework; path = System/Library/Frameworks/OSAKit.framework; sourceTree = SDKROOT; };
-		FA0F7B772105CBC30028CF34 /* OSAScript */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OSAScript; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0F7B772105CBC30028CF34 /* MacMenuUtil */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MacMenuUtil; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA29E46E215E7D2300C9F60C /* ESDConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ESDConnectionManager.m; sourceTree = "<group>"; };
 		FA29E46F215E7D2300C9F60C /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FA29E470215E7D2300C9F60C /* ESDConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESDConnectionManager.h; sourceTree = "<group>"; };
@@ -119,11 +141,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DE6B9F12C32E19A0052B4CF /* css */ = {
+			isa = PBXGroup;
+			children = (
+				7DE6B9E42C32E19A0052B4CF /* buttons.png */,
+				7DE6B9E52C32E19A0052B4CF /* buttons@2x.png */,
+				7DE6B9E62C32E19A0052B4CF /* caret.svg */,
+				7DE6B9E72C32E19A0052B4CF /* check.png */,
+				7DE6B9E82C32E19A0052B4CF /* check.svg */,
+				7DE6B9E92C32E19A0052B4CF /* elg_calendar_inv_13.svg */,
+				7DE6B9EA2C32E19A0052B4CF /* elg_calendar_inv.svg */,
+				7DE6B9EB2C32E19A0052B4CF /* elg_calendar.svg */,
+				7DE6B9EC2C32E19A0052B4CF /* local.css */,
+				7DE6B9ED2C32E19A0052B4CF /* pi_required_ok.svg */,
+				7DE6B9EE2C32E19A0052B4CF /* pi_required.svg */,
+				7DE6B9EF2C32E19A0052B4CF /* rcheck.svg */,
+				7DE6B9F02C32E19A0052B4CF /* sdpi.css */,
+			);
+			path = css;
+			sourceTree = "<group>";
+		};
+		7DE6B9FA2C32E19A0052B4CF /* com.theastroshed.macmenuutil.sdPlugin */ = {
+			isa = PBXGroup;
+			children = (
+				7DE6B9F12C32E19A0052B4CF /* css */,
+				7DE6B9F22C32E19A0052B4CF /* common.js */,
+				7DE6B9F32C32E19A0052B4CF /* en.json */,
+				7DE6B9F42C32E19A0052B4CF /* es.json */,
+				7DE6B9F52C32E19A0052B4CF /* index.html */,
+				7DE6B9FB2C32E1C90052B4CF /* package.sh */,
+				7DE6B9F62C32E19A0052B4CF /* MacMenuUtil */,
+				7DE6B9F72C32E19A0052B4CF /* MacMenuUtilIcon.png */,
+				7DE6B9F82C32E19A0052B4CF /* MacMenuUtilIcon@2x.png */,
+				7DE6B9F92C32E19A0052B4CF /* manifest.json */,
+			);
+			path = com.theastroshed.macmenuutil.sdPlugin;
+			sourceTree = "<group>";
+		};
 		FA0F7B6E2105CBC30028CF34 = {
 			isa = PBXGroup;
 			children = (
 				FACCC866211AC281008C87BD /* MyStreamDeckPlugin.h */,
 				FACCC865211AC281008C87BD /* MyStreamDeckPlugin.m */,
+				7DE6B9FA2C32E19A0052B4CF /* com.theastroshed.macmenuutil.sdPlugin */,
 				FA29E46D215E7D2300C9F60C /* Common */,
 				FAC7C7E42122CE1D000262E7 /* SocketRocket */,
 				FA0F7B782105CBC30028CF34 /* Products */,
@@ -134,7 +194,7 @@
 		FA0F7B782105CBC30028CF34 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FA0F7B772105CBC30028CF34 /* OSAScript */,
+				FA0F7B772105CBC30028CF34 /* MacMenuUtil */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -280,9 +340,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FA0F7B762105CBC30028CF34 /* OSAScript */ = {
+		FA0F7B762105CBC30028CF34 /* MacMenuUtil */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FA0F7B7E2105CBC30028CF34 /* Build configuration list for PBXNativeTarget "OSAScript" */;
+			buildConfigurationList = FA0F7B7E2105CBC30028CF34 /* Build configuration list for PBXNativeTarget "MacMenuUtil" */;
 			buildPhases = (
 				FA0F7B732105CBC30028CF34 /* Sources */,
 				FA0F7B742105CBC30028CF34 /* Frameworks */,
@@ -292,9 +352,9 @@
 			);
 			dependencies = (
 			);
-			name = OSAScript;
+			name = MacMenuUtil;
 			productName = ObjcPlugin;
-			productReference = FA0F7B772105CBC30028CF34 /* OSAScript */;
+			productReference = FA0F7B772105CBC30028CF34 /* MacMenuUtil */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +363,8 @@
 		FA0F7B6F2105CBC30028CF34 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1000;
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
 				ORGANIZATIONNAME = "Elgato Systems";
 				TargetAttributes = {
 					FA0F7B762105CBC30028CF34 = {
@@ -311,19 +372,20 @@
 					};
 				};
 			};
-			buildConfigurationList = FA0F7B722105CBC30028CF34 /* Build configuration list for PBXProject "OSAScript" */;
+			buildConfigurationList = FA0F7B722105CBC30028CF34 /* Build configuration list for PBXProject "MacMenuUtil" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = FA0F7B6E2105CBC30028CF34;
 			productRefGroup = FA0F7B782105CBC30028CF34 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA0F7B762105CBC30028CF34 /* OSAScript */,
+				FA0F7B762105CBC30028CF34 /* MacMenuUtil */,
 			);
 		};
 /* End PBXProject section */
@@ -388,6 +450,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -396,9 +459,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -448,6 +513,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -456,9 +522,11 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -479,7 +547,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielperales.osascript;
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theastroshed.macmenuutil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -488,7 +558,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gabrielperales.runosascript;
+				DEAD_CODE_STRIPPING = YES;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.theastroshed.runmacmenuutil;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -496,7 +568,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FA0F7B722105CBC30028CF34 /* Build configuration list for PBXProject "OSAScript" */ = {
+		FA0F7B722105CBC30028CF34 /* Build configuration list for PBXProject "MacMenuUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA0F7B7C2105CBC30028CF34 /* Debug */,
@@ -505,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FA0F7B7E2105CBC30028CF34 /* Build configuration list for PBXNativeTarget "OSAScript" */ = {
+		FA0F7B7E2105CBC30028CF34 /* Build configuration list for PBXNativeTarget "MacMenuUtil" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				FA0F7B7F2105CBC30028CF34 /* Debug */,

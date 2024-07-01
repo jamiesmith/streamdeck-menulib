@@ -1,21 +1,25 @@
-# streamdeck-osascript
-
-![](screenshot.png)
+# streamdeck-macmenulib
 
 ## Description
 
-`Run OSA Script` is a plugin that allows you to run arbitrary OSA language scripts (AppleScript and JavaScript for automation). It's based on the plugin `streamdeck-applescript` but this one has been rewritten from the scratch to update it to the Stream Deck SDK v2.
+`MacOS Menu Lib` is a plugin that allows you to trigger arbitrary menu items on
+MacOS It's heavily based on streamdeck-osascript, which in turn was based on the
+plugin `streamdeck-applescript`
+
+The format of the menu items is currently: `"App Name", "Menu1", "Menu1 Submenu", "Actual Item"` (see below for examples)
+The first entry is the application name, the following values are the subsequent menu and sub menus
 
 ## Features
 
 - code written in Objective-C
 - macOS only
-- executes AppleScript scripts
-- executes JXA (JavaScript for automation) scripts
+- executes / triggers arbitrary menu items
 
 ## Installation
 
-In the Release folder, you can find the file `com.gabrielperales.osascript.streamDeckPlugin`. If you double-click this file on your machine, Stream Deck will install the plugin.
+In the Release folder, you can find the file
+`com.gabrielperales.osascript.streamDeckPlugin`. If you double-click this file
+on your machine, Stream Deck will install the plugin.
 
 ## Source code
 
@@ -24,16 +28,18 @@ The Sources folder contains the source code of the plugin.
 
 ## Examples
 
-### Open VS Code
-
-```JavaScript
-var code = Application('Visual Studio Code');
-code.activate();
+### Create a new message in apple mail
+![](mail-new-message.png.png)
+```
+"Mail", "File", "New Message"
 ```
 
-## Resources to learn AppleScript and JXA
+### Validate HTML syntax in textmate
+![](textmate-menu.png)
 
-- [JXA-Cookbook](https://github.com/JXA-Cookbook/JXA-Cookbook)
-- [Automating macOS with JXA presentation](https://github.com/josh-/automating-macOS-with-JXA-presentation)
-- [Stackoverflow JXA](https://stackoverflow.com/questions/tagged/javascript-automation)
-- [Stackoverflow AppleScript](https://stackoverflow.com/questions/tagged/applescript)
+```
+"TextMate", "Bundles", "HTML", "Validate Syntax"
+```
+(yes, I know there's a keyboard shortcut but I wanted something nested)
+
+Some icons are taken from [Icons8](https://icons8.com) and existing streamdeck icons

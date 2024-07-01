@@ -1,0 +1,9 @@
+{
+  "Description": "Run arbitrary AppleScript / JavaScript code",
+  "Name": "MacMenuUtil",
+  "Category": "TheAstroShed Utils",
+  "com.theastroshed.macmenuutil.action": {
+    "Name": "Trigger a MacOS menu item",
+    "Tooltip": "trigger a MacOS Menu Item"
+  }
+}

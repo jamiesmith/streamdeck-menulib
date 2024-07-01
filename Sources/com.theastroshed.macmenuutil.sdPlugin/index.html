@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Trigger a MacOS Menu Item</title>
+	<link rel="stylesheet" href="css/sdpi.css">
+	<link rel="stylesheet" href="css/local.css">
+</head>
+<body>
+	<div class="sdpi-wrapper localbody hiddenx">
+
+        <div type="textarea" class="sdpi-item">
+            <div class="sdpi-item-label">Menu Hierachy</div>
+            <div class="sdpi-item-value textarea">
+                <textarea type="textarea" id="csvMenuList" oninput="saveSettings()"></textarea>
+            </div>
+        </div>
+
+	</div>
+	<script src="common.js"></script>
+	<script>
+		var uuid,
+		actionInfo,
+		settings,
+		ctx;
+
+		$SD.on('connected', (jsonObj) => {
+			connected(jsonObj);
+		});
+
+		function connected(jsonObj) {
+			console.log('connected');
+			console.log(jsonObj);
+			uuid = jsonObj.uuid;
+			actionInfo = jsonObj.actionInfo.action;
+			ctx = jsonObj.actionInfo.context;
+			settings = jsonObj.actionInfo.payload.settings;
+            console.log("CONNECTED: " + JSON.stringify(settings));
+			document.getElementById('csvMenuList').value = settings.csvMenuList || '';
+            
+		}
+
+		function saveSettings() {
+			settings.csvMenuList = document.getElementById('csvMenuList').value;
+			$SD.api.setSettings(uuid, settings);
+			console.log("SAVE: " + JSON.stringify(settings));
+		}
+	</script>
+</body>
+</html>

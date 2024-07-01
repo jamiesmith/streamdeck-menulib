@@ -161,6 +161,7 @@ static NSString * CreateBase64EncodedString(NSString *inImagePath)
 
 - (void)setupIfNeeded
 {
+    
 	// Create the array of known contexts
 	if(_knownContexts == nil)
 	{
@@ -173,7 +174,7 @@ static NSString * CreateBase64EncodedString(NSString *inImagePath)
 	
 	if(_base64MailIconString == nil)
 	{
-		_base64MailIconString = CreateBase64EncodedString(GetResourcePath(@"RunOSAScripticon.png"));
+		_base64MailIconString = CreateBase64EncodedString(GetResourcePath(@"MacMenuUtilIcon.png"));
 	}
 }
 
@@ -184,18 +185,37 @@ static NSString * CreateBase64EncodedString(NSString *inImagePath)
 {
     OSAScript * osa;     // empty osa object
     NSDictionary * errors = nil;     //errors
-
+    
     NSDictionary * tempDict = self.settingsPayload[context]; //grab 'our' copy of the settings (for this specific context/button)
 
-    ///  * language - A string containing the OSA language, either 'AppleScript' or 'JavaScript'.
+    
+    NSLog(@"Trying");
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"menulib" ofType:@"inc"];
+    NSString *baseScript = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    
+    NSLog(@"baseScript: %@", baseScript);
+    
+    //  * language - A string containing the OSA language, either 'AppleScript' or 'JavaScript'.
     NSString * language = tempDict[@"language"];
     
-    if(tempDict[@"scriptText"] != nil)
+    if(tempDict[@"csvMenuList"] != nil)
     {
-        //Handler for inline scripts
-        NSString * tempSource= tempDict[@"scriptText"];
+        // use menuLib : script "MenuLibrary"
+        // menuLib's menu_click()
+        //{"PixInsight", "Script", "Image Analysis", "FWHMEccentricity"}
+        
+        NSString * tempSource= tempDict[@"csvMenuList"];
         if(tempSource != nil){
-            osa = [[OSAScript alloc] initWithSource:tempSource language: [OSALanguage languageForName:language]];
+            NSString * menuLibScript = [NSString stringWithFormat:@"%@\nmenu_click({%@})", baseScript, tempSource];
+//            menuLibScript = [NSString stringWithFormat:@"use menuLib : script \"MenuLibrary\"\n menuLib's menu_click({%@})",
+//                tempSource];
+            
+            
+            NSLog(@"Payload: %@", menuLibScript);
+
+
+            
+            osa = [[OSAScript alloc] initWithSource:menuLibScript language: [OSALanguage languageForName:language]];
         }
     }
 
@@ -205,7 +225,7 @@ static NSString * CreateBase64EncodedString(NSString *inImagePath)
         [osa executeAndReturnError:&errors];
 
         if (errors) {
-            NSLog(@"errors: %@", errors);
+            NSLog(@"errors : %@", errors);
         }
     }
 }

@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/gabrielperales/workspace/streamdeck-osascript/Sources/OSAScript.xcodeproj">
+      location = "self:/Users/jamie/Projects/GitRepo/streamdeck-menulib/Sources/MacMenuUtil.xcodeproj">
    </FileRef>
 </Workspace>
