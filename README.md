@@ -21,9 +21,14 @@ In the Release folder, you can find the file
 `com.gabrielperales.osascript.streamDeckPlugin`. If you double-click this file
 on your machine, Stream Deck will install the plugin.
 
+## But it doesn't work!
+
+I can't get it to refresh / change the params when loading. The workaround is to copy 
+the activity, paste it somewhere else, then move it where you want it. PRs welcome!
+
 ## Source code
 
-The Sources folder contains the source code of the plugin.
+The Sources folder contains the source code of the plugin. Don't judge, I hacked this together.
 
 
 ## Examples
