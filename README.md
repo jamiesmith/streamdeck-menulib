@@ -29,7 +29,7 @@ The Sources folder contains the source code of the plugin.
 ## Examples
 
 ### Create a new message in apple mail
-![](docs/mail-new-message.png.png)
+![](docs/mail-new-message.png)
 ```
 "Mail", "File", "New Message"
 ```
