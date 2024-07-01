@@ -29,13 +29,13 @@ The Sources folder contains the source code of the plugin.
 ## Examples
 
 ### Create a new message in apple mail
-![](mail-new-message.png.png)
+![](docs/mail-new-message.png.png)
 ```
 "Mail", "File", "New Message"
 ```
 
 ### Validate HTML syntax in textmate
-![](textmate-menu.png)
+![](docs/textmate-menu.png)
 
 ```
 "TextMate", "Bundles", "HTML", "Validate Syntax"
