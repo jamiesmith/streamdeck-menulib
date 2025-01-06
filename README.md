@@ -3,8 +3,9 @@
 ## Description
 
 `MacOS Menu Lib` is a plugin that allows you to trigger arbitrary menu items on
-MacOS It's heavily based on streamdeck-osascript, which in turn was based on the
-plugin `streamdeck-applescript`
+MacOS It's heavily based on Gabriel Perales's 
+[streamdeck-osascript](https://github.com/gabrielperales/streamdeck-osascript), which
+in turn was based on the plugin `streamdeck-applescript`
 
 The format of the menu items is currently: `"App Name", "Menu1", "Menu1 Submenu", "Actual Item"` (see below for examples)
 The first entry is the application name, the following values are the subsequent menu and sub menus
@@ -18,7 +19,7 @@ The first entry is the application name, the following values are the subsequent
 ## Installation
 
 In the Release folder, you can find the file
-`com.gabrielperales.osascript.streamDeckPlugin`. If you double-click this file
+`com.theastroshed.macmenuutil.streamDeckPlugin`. If you double-click this file
 on your machine, Stream Deck will install the plugin.
 
 ## But it doesn't work!

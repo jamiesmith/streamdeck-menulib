@@ -160,8 +160,7 @@ static NSString * CreateBase64EncodedString(NSString *inImagePath)
 // MARK: - Setup the instance variables if needed
 
 - (void)setupIfNeeded
-{
-    
+{    
 	// Create the array of known contexts
 	if(_knownContexts == nil)
 	{
@@ -200,20 +199,13 @@ static NSString * CreateBase64EncodedString(NSString *inImagePath)
     
     if(tempDict[@"csvMenuList"] != nil)
     {
-        // use menuLib : script "MenuLibrary"
-        // menuLib's menu_click()
-        //{"PixInsight", "Script", "Image Analysis", "FWHMEccentricity"}
-        
+        // Example: "PixInsight", "Script", "Image Analysis", "FWHMEccentricity"
+        //
         NSString * tempSource= tempDict[@"csvMenuList"];
         if(tempSource != nil){
             NSString * menuLibScript = [NSString stringWithFormat:@"%@\nmenu_click({%@})", baseScript, tempSource];
-//            menuLibScript = [NSString stringWithFormat:@"use menuLib : script \"MenuLibrary\"\n menuLib's menu_click({%@})",
-//                tempSource];
-            
             
             NSLog(@"Payload: %@", menuLibScript);
-
-
             
             osa = [[OSAScript alloc] initWithSource:menuLibScript language: [OSALanguage languageForName:language]];
         }
